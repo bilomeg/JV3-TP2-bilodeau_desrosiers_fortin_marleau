@@ -20,7 +20,7 @@ public class UIMainMenu : MonoBehaviour
     private void StartNewGame()
     {
         //_levelManager.LoadNewGame();
-        _levelManager.LoadAsyncScene(LevelManager.Scene.Level01);
+        _levelManager.LoadAsyncScene(LevelManager.Scene.SceneAudrey);
     }
 
     private void QuiteGame()

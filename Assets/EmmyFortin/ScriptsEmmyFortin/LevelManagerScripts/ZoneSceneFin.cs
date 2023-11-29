@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZoneMainMenu : MonoBehaviour
+public class ZoneSceneFin : MonoBehaviour
 {
     private LevelManager _levelManager;
 
@@ -16,7 +16,6 @@ public class ZoneMainMenu : MonoBehaviour
 
  private void OnTriggerEnter(Collider other)
  {
-    _levelManager.LoadAsyncScene(LevelManager.Scene.MainMenu);
-    
+    _levelManager.LoadAsyncScene(LevelManager.Scene.Credits);
  }
 }

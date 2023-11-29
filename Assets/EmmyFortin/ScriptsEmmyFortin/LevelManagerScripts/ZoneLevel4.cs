@@ -16,6 +16,6 @@ public class ZoneLevel4 : MonoBehaviour
 
  private void OnTriggerEnter(Collider other)
  {
-    _levelManager.LoadAsyncScene(LevelManager.Scene.Level04);
+    _levelManager.LoadAsyncScene(LevelManager.Scene.SceneMegane);
  }
 }
