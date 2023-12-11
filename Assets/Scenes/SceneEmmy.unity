@@ -1169,7 +1169,8 @@ PrefabInstance:
       value: ImprimanteLobby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8934777400606672865, guid: d9d138a7153389f4ca721ad0fde99305, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d138a7153389f4ca721ad0fde99305, type: 3}
@@ -3361,7 +3362,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 807698114b8cf0144a3611c2d4bb6d10, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -162872579109521821, guid: 614387211153240439b571d067f7157c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 614387211153240439b571d067f7157c, type: 3}
