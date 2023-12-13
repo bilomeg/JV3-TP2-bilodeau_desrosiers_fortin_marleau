@@ -4,16 +4,34 @@ public class InteractionPalette : MonoBehaviour
 {
     [SerializeField] private GameObject _crowbar;
     [SerializeField] private GameObject _crowbarActive;
+
+    [SerializeField] private ListeObjectifs _listeObjectifs;
+      private bool _isCrowbarTaken = false;
+      [SerializeField] private GameObject _crochetCanvas;
     // Start is called before the first frame update
 
-    private void OnTriggerEnter(Collider other)
+ private void OnTriggerEnter(Collider other)
+    {
+        // Si le joueur entre en collision avec le marteau et qu'il n'est pas encore pris
+        if (other.CompareTag("Tool") && !_isCrowbarTaken)
         {
-            // Si le joueur entre en collision avec le marteau et qu'il n'est pas encore pris
-            if (other.CompareTag("Tool"))
+            _isCrowbarTaken = true;
+
+            // Activer l'élément UI correspondant au marteau (à condition que ce soit un objectif)
+            if (_listeObjectifs != null)
             {
-                _crowbarActive.SetActive(true); // Active l'élément UI correspondant au marteau
-                Destroy(_crowbar);
-                Destroy(gameObject);
+                _listeObjectifs.ObjectifAccompli("CrowBar");
+                Debug.Log("dodo");
             }
+
+            _crowbarActive.SetActive(true); // Activer l'élément UI correspondant au marteau
+            Destroy(_crowbar);
+            Destroy(gameObject);
         }
+    }
+    public void ActiverImageObjectifAccompli(){
+       _crochetCanvas.SetActive(true);
+        Debug.Log("Objectif CrowBar accompli - Crochet activé");
+       Debug.Log("tim");
+    }
 }

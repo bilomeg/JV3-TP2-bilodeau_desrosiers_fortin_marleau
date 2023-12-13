@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb646f464700e6241b1bbc50fadcc340, type: 3}
   m_Name: ListeObjectifsThomas
   m_EditorClassIdentifier: 
-  objectifsAFaire:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  objectifs:
+  - _nomObjectif: CrowBar
+    _estAccompli: 0
+  - _nomObjectif: Marteau
+    _estAccompli: 0
+  - _nomObjectif: Massue
+    _estAccompli: 1
