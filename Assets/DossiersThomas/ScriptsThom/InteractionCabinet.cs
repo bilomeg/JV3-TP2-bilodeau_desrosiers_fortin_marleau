@@ -15,14 +15,12 @@ public class InteractionCabinet : MonoBehaviour
                 if (_listeObjectifs != null)
                 {
                     _listeObjectifs.ObjectifAccompli("Marteau");
+                    _crochetCanvas2.SetActive(true);
                 }
                 _hammerActive.SetActive(true); 
                 Destroy(_hammer);
                 Destroy(gameObject);
             }
         }
-        public void ActiverImageObjectifAccompli(){
-       _crochetCanvas2.SetActive(true);
-       Debug.Log("tim");
-    }
+      
 }

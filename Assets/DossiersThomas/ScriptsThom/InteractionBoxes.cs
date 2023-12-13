@@ -16,14 +16,14 @@ public class InteractionBoxes : MonoBehaviour
                 _isMassueTaken = true; 
                 if(_listeObjectifs != null){
                     _listeObjectifs.ObjectifAccompli("Massue");
+                    
+                    _crochetCanvas3.SetActive(true);
                 }
+                
                 _bighammerActive.SetActive(true); // Active l'élément UI correspondant au marteau
                 Destroy(_bighammer);
                 Destroy(gameObject);
             }
         }
-        public void ActiverImageObjectifAccompli(){
-       _crochetCanvas3.SetActive(true);
-       Debug.Log("tim");
-    }
+     
 }

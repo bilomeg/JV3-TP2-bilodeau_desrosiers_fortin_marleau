@@ -21,6 +21,7 @@ public class InteractionPalette : MonoBehaviour
             if (_listeObjectifs != null)
             {
                 _listeObjectifs.ObjectifAccompli("CrowBar");
+                _crochetCanvas.SetActive(true);
                 Debug.Log("dodo");
             }
 
@@ -29,9 +30,5 @@ public class InteractionPalette : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void ActiverImageObjectifAccompli(){
-       _crochetCanvas.SetActive(true);
-        Debug.Log("Objectif CrowBar accompli - Crochet activé");
-       Debug.Log("tim");
-    }
+
 }

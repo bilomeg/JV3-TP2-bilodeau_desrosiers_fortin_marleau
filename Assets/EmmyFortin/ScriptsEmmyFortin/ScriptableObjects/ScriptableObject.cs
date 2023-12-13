@@ -15,45 +15,27 @@ public class ListeObjectifs : ScriptableObject
    public List<Objectif> objectifs = new List<Objectif>();
    private InteractionPalette _interactionPalette;
    private InteractionCabinet _interactionCabinet;
-   private InteractionBoxes _interactionBoxes;
 
-   // Assigner la référence au script InteractionPalette lors de l'initialisation
-    public void InitialiserInteractionPalette(InteractionPalette interactionPalette)
+  
+    // Méthode pour assigner la référence à _interactionPalette
+    public void AssignerInteractionPalette(InteractionPalette interactionPalette)
     {
         _interactionPalette = interactionPalette;
     }
-    public void InitialiserInteractionCabinet(InteractionCabinet interactionCabinet)
+
+    // Méthode pour assigner la référence à _interactionCabinet
+    public void AssignerInteractionCabinet(InteractionCabinet interactionCabinet)
     {
         _interactionCabinet = interactionCabinet;
     }
-    public void InitialiserInteractionBoxes(InteractionBoxes interactionBoxes)
-    {
-        _interactionBoxes = interactionBoxes;
-    }
-public void ObjectifAccompli(string _nomObjectif)
+
+    public void ObjectifAccompli(string _nomObjectif)
     {
         Objectif objectif = objectifs.Find(o => o._nomObjectif == _nomObjectif);
         if (objectif != null)
-         {
+        {
             objectif._estAccompli = true;
-            Debug.Log("Objectif accompli : " + _nomObjectif);
-
-            // Appeler la fonction pour activer l'image correspondante à l'objectif accompli
-            if (_interactionPalette != null)
-            {
-                _interactionPalette.ActiverImageObjectifAccompli();
-            }
-             // Appeler la fonction pour activer l'image correspondante à l'objectif accompli
-            if (_interactionCabinet != null)
-            {
-                _interactionCabinet.ActiverImageObjectifAccompli();
-            }
-             // Appeler la fonction pour activer l'image correspondante à l'objectif accompli
-            if (_interactionBoxes != null)
-            {
-                _interactionBoxes.ActiverImageObjectifAccompli();
-            }
         }
-    }  
+    }
    
 }
