@@ -13,21 +13,7 @@ public class ListeObjectifs : ScriptableObject
         public bool _estAccompli;
     }
    public List<Objectif> objectifs = new List<Objectif>();
-   private InteractionPalette _interactionPalette;
-   private InteractionCabinet _interactionCabinet;
-
-  
-    // Méthode pour assigner la référence à _interactionPalette
-    public void AssignerInteractionPalette(InteractionPalette interactionPalette)
-    {
-        _interactionPalette = interactionPalette;
-    }
-
-    // Méthode pour assigner la référence à _interactionCabinet
-    public void AssignerInteractionCabinet(InteractionCabinet interactionCabinet)
-    {
-        _interactionCabinet = interactionCabinet;
-    }
+   
 
     public void ObjectifAccompli(string _nomObjectif)
     {
