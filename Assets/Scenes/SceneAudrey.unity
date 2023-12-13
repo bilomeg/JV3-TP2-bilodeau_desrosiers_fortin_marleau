@@ -3694,6 +3694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf8b5b768390ef468160b3da95decb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crowbarObject: {fileID: 158189026}
 --- !u!1 &665884268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d551d72754e1f53478ab0980715d3ff2,
@@ -9459,6 +9460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrSocketInteractor: {fileID: 296184652}
   pastilleChangementScene: {fileID: 1451337885}
+  clef: {fileID: 6983453430715768509}
 --- !u!4 &1636624784
 Transform:
   m_ObjectHideFlags: 0
@@ -10700,7 +10702,7 @@ PrefabInstance:
     - target: {fileID: 7861694621200475968, guid: e8650f681653c044ebb8c523687e3b3d,
         type: 3}
       propertyPath: m_TagString
-      value: Crowbar2
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11083,6 +11085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf8b5b768390ef468160b3da95decb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crowbarObject: {fileID: 158189026}
 --- !u!1001 &1848522039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11960,6 +11963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf8b5b768390ef468160b3da95decb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crowbarObject: {fileID: 158189026}
 --- !u!1001 &2002956479
 PrefabInstance:
   m_ObjectHideFlags: 0

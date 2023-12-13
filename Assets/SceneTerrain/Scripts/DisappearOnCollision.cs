@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DisappearOnCollision : MonoBehaviour
 {
+    [SerializeField] private GameObject crowbarObject;
+
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the object that triggered the collider is the crowbar.
-        if (other.CompareTag("Crowbar2"))
+        if (other.gameObject == crowbarObject)
         {
-            // If the collider belongs to the crowbar, make the planks disappear.
             gameObject.SetActive(false);
         }
     }
