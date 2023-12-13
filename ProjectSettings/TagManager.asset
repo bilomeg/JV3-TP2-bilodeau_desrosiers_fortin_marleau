@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - planche
-  - Crowbar
+  - Crowbar2
   layers:
   - Default
   - TransparentFX
