@@ -1,1 +1,0 @@
-  private GameObject _switchOn;
