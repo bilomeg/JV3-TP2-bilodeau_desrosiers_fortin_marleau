@@ -15980,8 +15980,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Emmy Fortin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 31b05251087c1ba4bae06b5bfd44f2a8, type: 2}
-  m_sharedMaterial: {fileID: -3770079434908514440, guid: 31b05251087c1ba4bae06b5bfd44f2a8,
+  m_fontAsset: {fileID: 11400000, guid: 776fd9ca370cdbd4781c8bcdb81c7c44, type: 2}
+  m_sharedMaterial: {fileID: 7294028337403846973, guid: 776fd9ca370cdbd4781c8bcdb81c7c44,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
