@@ -32,13 +32,5 @@ public class ListeObjectifs : ScriptableObject
         return objectifs.All(o => o._estAccompli);
         
     }
-    public void ReinitialiserObjectifs()
-    {
-        // Réinitialise tous les objectifs à non accomplis
-        foreach (Objectif objectif in objectifs)
-        {
-            objectif._estAccompli = false;
-        }
-    }
    
 }
