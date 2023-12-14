@@ -1693,7 +1693,7 @@ Transform:
   - {fileID: 54255438}
   - {fileID: 766661348}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &393365551
 PrefabInstance:
@@ -3844,7 +3844,7 @@ Transform:
   m_Children:
   - {fileID: 209997125329990271}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &956512752
 PrefabInstance:
@@ -5064,79 +5064,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180533377}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1236844946
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.16746993
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00000023841858
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.962571
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b8afdfb55d4490b4e8bd1e584dae3227,
-        type: 3}
-      propertyPath: m_Name
-      value: Low Poly Wall Lamp
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b8afdfb55d4490b4e8bd1e584dae3227, type: 3}
 --- !u!1001 &1250760547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5237,7 +5164,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a4b442707b96f754f97b0cdcbabe8be9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a4b442707b96f754f97b0cdcbabe8be9,
         type: 3}
@@ -7226,7 +7153,7 @@ Transform:
   - {fileID: 802031997}
   - {fileID: 2000468050}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804744521 stripped
 GameObject:
@@ -7876,7 +7803,7 @@ Transform:
   - {fileID: 1870972847}
   - {fileID: 943606433}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1950655664
 PrefabInstance:
@@ -17282,7 +17209,7 @@ Transform:
   - {fileID: 7995407980687915350}
   - {fileID: 5427702327440059275}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &6981270372451443994
 MeshRenderer:
