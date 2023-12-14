@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectifs:
   - _nomObjectif: CrowBar
-    _estAccompli: 0
+    _estAccompli: 1
   - _nomObjectif: Marteau
-    _estAccompli: 0
+    _estAccompli: 1
   - _nomObjectif: Massue
-    _estAccompli: 0
+    _estAccompli: 1
