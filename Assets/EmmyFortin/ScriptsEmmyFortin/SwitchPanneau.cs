@@ -34,6 +34,9 @@ public bool _courantOn;
   private GameObject _lumiereDuLobby;
 
   private bool _toggleSwitch;
+   [SerializeField] private ListeObjectifs _listeObjectifs;
+     [SerializeField] private GameObject _crochetEmmy1;
+     [SerializeField] private GameObject _crochetEmmy2;
   public void Switch1OnOff()
   {
     
@@ -83,7 +86,9 @@ CourantCheck();
     if (_toggleSwitch1 && _toggleSwitch2)
         {
             Debug.Log("all0");
-            _courantOn = true;
+            _courantOn = true; 
+             _listeObjectifs.ObjectifAccompli("Electricite");
+             _crochetEmmy1.SetActive(true);
          
         }
         else
@@ -100,6 +105,9 @@ CourantCheck();
       _switchOff.SetActive(false);
       _toggleSwitch = true;
       _lumiereDuLobby.SetActive(true);
+     _listeObjectifs.ObjectifAccompli("Lumiere");
+             _crochetEmmy2.SetActive(true);
+       
       //_sonInterupteur.Play();
     }
     else{
