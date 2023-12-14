@@ -7,7 +7,14 @@ public class InteractionBoxes : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private ListeObjectifs _listeObjectifs;
     private bool _isMassueTaken = false;
+    [SerializeField]
+  private Animator _animationAcsneceur;
+
     [SerializeField] private GameObject _crochetCanvas3;
+     void Start()
+{
+    _animationAcsneceur = gameObject.GetComponent<Animator>();
+}
     private void OnTriggerEnter(Collider other)
         {
             // Si le joueur entre en collision avec le marteau et qu'il n'est pas encore pris

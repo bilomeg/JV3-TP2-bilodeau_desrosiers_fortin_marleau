@@ -22,7 +22,7 @@ public class InteractionPalette : MonoBehaviour
             {
                 _listeObjectifs.ObjectifAccompli("CrowBar");
                 _crochetCanvas.SetActive(true);
-                Debug.Log("dodo");
+               
             }
 
             _crowbarActive.SetActive(true); // Activer l'élément UI correspondant au marteau
