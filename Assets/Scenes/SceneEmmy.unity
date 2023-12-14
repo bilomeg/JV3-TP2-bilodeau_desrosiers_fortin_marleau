@@ -2772,6 +2772,10 @@ MonoBehaviour:
   _switch1Off: {fileID: 339779612}
   _switch2On: {fileID: 1111596950738732431}
   _switch2Off: {fileID: 2062457018}
+  _courantOn: 0
+  _switchOn: {fileID: 1488674852}
+  _switchOff: {fileID: 934755802}
+  _lumiereDuLobby: {fileID: 1870972846}
 --- !u!1 &771909445
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,6 +3790,8 @@ MonoBehaviour:
   _switchOn: {fileID: 1488674852}
   _switchOff: {fileID: 934755802}
   _lumiereDuLobby: {fileID: 1870972846}
+  _toggleSwitch: 0
+  switchPanneau: {fileID: 767042838}
 --- !u!1 &948719348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7328845513136513942, guid: e6b58bedadd03744c89593e244994c22,
@@ -7255,9 +7261,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 943606434}
-        m_TargetAssemblyTypeName: ToggleSwitchLobby, Assembly-CSharp
-        m_MethodName: LumiereOnOff
+      - m_Target: {fileID: 767042838}
+        m_TargetAssemblyTypeName: SwitchPanneau, Assembly-CSharp
+        m_MethodName: AllumerLumiere
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7265,7 +7271,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:

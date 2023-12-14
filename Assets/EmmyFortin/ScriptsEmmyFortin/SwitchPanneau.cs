@@ -17,6 +17,23 @@ public class SwitchPanneau : MonoBehaviour
   private GameObject _switch2Off;
   private bool _toggleSwitch1;
 private bool _toggleSwitch2;
+
+public bool _courantOn;
+   
+
+
+
+
+   [SerializeField]
+  private GameObject _switchOn;
+
+  [SerializeField]
+  private GameObject _switchOff;
+
+[SerializeField]
+  private GameObject _lumiereDuLobby;
+
+  private bool _toggleSwitch;
   public void Switch1OnOff()
   {
     
@@ -27,7 +44,7 @@ private bool _toggleSwitch2;
       _switch1Off.SetActive(false);
       _toggleSwitch1 = true;
 
-
+CourantCheck();
   
     }
      else
@@ -47,6 +64,7 @@ private bool _toggleSwitch2;
       _switch2On.SetActive(true);
       _switch2Off.SetActive(false);
       _toggleSwitch2 = true;
+      CourantCheck();
     }
       else
     {
@@ -60,6 +78,37 @@ private bool _toggleSwitch2;
     }
     
     }
-    
+    public void CourantCheck()
+{
+    if (_toggleSwitch1 && _toggleSwitch2)
+        {
+            Debug.Log("all0");
+            _courantOn = true;
+         
+        }
+        else
+        {
+            _courantOn = false;
+       
+        }
+}
+
+   public void AllumerLumiere(){
+    if(_toggleSwitch == false && _courantOn ==true){
+        Debug.Log("yes");
+         _switchOn.SetActive(true);
+      _switchOff.SetActive(false);
+      _toggleSwitch = true;
+      _lumiereDuLobby.SetActive(true);
+      //_sonInterupteur.Play();
+    }
+    else{
+              _switchOn.SetActive(false);
+      _switchOff.SetActive(true);
+      _toggleSwitch = false;
+      _lumiereDuLobby.SetActive(false);
+      //_sonInterupteur.Play();
+    }
+   } 
   
 }
