@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionCabinet : MonoBehaviour
@@ -7,6 +9,10 @@ public class InteractionCabinet : MonoBehaviour
     [SerializeField] private ListeObjectifs _listeObjectifs;
     private bool _isHammerTaken = false;
     [SerializeField] private GameObject _crochetCanvas2;
+     public bool IsHammerTaken()
+    {
+        return _isHammerTaken;
+    }
     private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Tool") && !_isHammerTaken)

@@ -22,7 +22,7 @@ public class PortePanneau : MonoBehaviour
     {
       _animationPanneau.Play("PorteOuvre");
       _panneauOuvert = true;
-      Debug.Log("hello");
+      
      
     
   
@@ -32,8 +32,7 @@ public class PortePanneau : MonoBehaviour
       
      
       _panneauOuvert = false;
-      Debug.Log("bye");
-      
+     
       
 
     }

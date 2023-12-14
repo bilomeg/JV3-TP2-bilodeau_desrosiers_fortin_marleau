@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionPalette : MonoBehaviour
@@ -9,7 +11,10 @@ public class InteractionPalette : MonoBehaviour
       private bool _isCrowbarTaken = false;
       [SerializeField] private GameObject _crochetCanvas;
     // Start is called before the first frame update
-
+ public bool IsCrowbarTaken()
+    {
+        return _isCrowbarTaken;
+    }
  private void OnTriggerEnter(Collider other)
     {
         // Si le joueur entre en collision avec le marteau et qu'il n'est pas encore pris

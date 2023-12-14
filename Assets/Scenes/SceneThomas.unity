@@ -4134,6 +4134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b6e87a3b24fe65488ffd92f321c6f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationAscenceur: {fileID: 1850429807}
   _bighammer: {fileID: 66635046}
   _bighammerActive: {fileID: 1394603190}
   _listeObjectifs: {fileID: 11400000, guid: 6d2fd485c77b7ea46800ed877ea2ebdb, type: 2}
@@ -16153,7 +16154,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1655909748}
-  - component: {fileID: 1655909749}
   m_Layer: 0
   m_Name: GestionAscenceur
   m_TagString: Untagged
@@ -16176,20 +16176,6 @@ Transform:
   m_Father: {fileID: 1341824813}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1655909749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655909747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3268221978ed4458594ba372c36d7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listeObjectifs: {fileID: 11400000, guid: 6d2fd485c77b7ea46800ed877ea2ebdb, type: 2}
-  _animationAscenceur: {fileID: 1850429807}
 --- !u!1001 &1670070281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17937,6 +17923,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1850429808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850429805}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3268221978ed4458594ba372c36d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listeObjectifs: {fileID: 11400000, guid: 6d2fd485c77b7ea46800ed877ea2ebdb, type: 2}
+  _animationAscenceur: {fileID: 1850429807}
+  _hammerInteraction: {fileID: 115019448}
+  _crowbarInteraction: {fileID: 866826349}
+  _massueInteraction: {fileID: 535103529}
+  _isHammerTaken: 0
+  _isCrowbarTaken: 0
+  _isMassueTaken: 0
 --- !u!1001 &1870564562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22869,6 +22875,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1850429807}
+    - targetCorrespondingSourceObject: {fileID: 2624260129001603624, guid: a5af1cf24c7b02740947ce60b70b9488,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1850429808}
     - targetCorrespondingSourceObject: {fileID: 2677394155494905128, guid: a5af1cf24c7b02740947ce60b70b9488,
         type: 3}
       insertIndex: -1
