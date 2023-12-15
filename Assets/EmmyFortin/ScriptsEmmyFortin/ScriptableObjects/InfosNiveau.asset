@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12df2918cdaaa24409f4a05fd0d52020, type: 3}
   m_Name: InfosNiveau
   m_EditorClassIdentifier: 
-  _tempsDeJeu: 
+  _tempsDeJeu: -01:-04
   _defaitePartie: 0
   _victoirePartie: 0

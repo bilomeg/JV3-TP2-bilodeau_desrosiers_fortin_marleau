@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour
     //Pour déterminer si le temps est écoule 
     private bool _tempsEstEcoule = false;
    
-   
+
 
 
     
@@ -36,6 +36,7 @@ public class Timer : MonoBehaviour
 
     _tempsQuiReste -= Time.deltaTime; 
     AfficherTemps(_tempsQuiReste);
+    _infosDuNiveau._tempsDeJeu = _tempsTexte.text;
 
    // Si le temps est fini la valeur de la variable devient true et on appel le ChangementDeScene
    /* if(_tempsQuiReste <= 0f){
@@ -67,7 +68,7 @@ public class Timer : MonoBehaviour
 
     _tempsTexte.text = string.Format("{0:00}:{1:00}",minutes,secondes);
     
-    _infosDuNiveau._tempsDeJeu = _tempsTexte.text;
+  _infosDuNiveau._tempsDeJeu = _tempsTexte.text;
 
    }
     
