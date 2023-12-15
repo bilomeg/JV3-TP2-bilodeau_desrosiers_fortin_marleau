@@ -2577,7 +2577,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1636624783}
+        m_TargetAssemblyTypeName: ActivationScript, Assembly-CSharp
+        m_MethodName: PourListe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -4029,6 +4041,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crowbarObject: {fileID: 158189026}
   disappearanceSound: {fileID: 8300000, guid: 66ec4506f5c7ecf41ba36d59ab844188, type: 3}
+  _listeObjectifs: {fileID: 11400000, guid: 65be0d32c27d2e14aa4736b3fe14590c, type: 2}
+  _crochetAudrey1: {fileID: 2566549434150100779}
 --- !u!82 &650295098
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10042,6 +10056,8 @@ MonoBehaviour:
   xrSocketInteractor: {fileID: 296184652}
   pastilleChangementScene: {fileID: 1451337885}
   clef: {fileID: 6983453430715768509}
+  _listeObjectifs: {fileID: 11400000, guid: 65be0d32c27d2e14aa4736b3fe14590c, type: 2}
+  _crochetAudrey2: {fileID: 1785874164519425648}
 --- !u!4 &1636624784
 Transform:
   m_ObjectHideFlags: 0
@@ -11770,6 +11786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crowbarObject: {fileID: 158189026}
   disappearanceSound: {fileID: 8300000, guid: 66ec4506f5c7ecf41ba36d59ab844188, type: 3}
+  _listeObjectifs: {fileID: 11400000, guid: 65be0d32c27d2e14aa4736b3fe14590c, type: 2}
+  _crochetAudrey1: {fileID: 2566549434150100779}
 --- !u!82 &1822614585
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12745,6 +12763,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crowbarObject: {fileID: 158189026}
   disappearanceSound: {fileID: 8300000, guid: 66ec4506f5c7ecf41ba36d59ab844188, type: 3}
+  _listeObjectifs: {fileID: 11400000, guid: 65be0d32c27d2e14aa4736b3fe14590c, type: 2}
+  _crochetAudrey1: {fileID: 2566549434150100779}
 --- !u!82 &1995895287
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14969,7 +14989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Trouver la crowbar pour enlver les planches
+  m_text: Trouver la crowbar et enlver les planches
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 776fd9ca370cdbd4781c8bcdb81c7c44, type: 2}
   m_sharedMaterial: {fileID: 7294028337403846973, guid: 776fd9ca370cdbd4781c8bcdb81c7c44,
@@ -15033,7 +15053,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1133.2268, w: -174.32555}
+  m_margin: {x: 0, y: 0, z: -1141.2739, w: -174.32555}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
