@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectifs:
   - _nomObjectif: Electricite
-    _estAccompli: 0
+    _estAccompli: 1
   - _nomObjectif: Lumiere
-    _estAccompli: 0
+    _estAccompli: 1
