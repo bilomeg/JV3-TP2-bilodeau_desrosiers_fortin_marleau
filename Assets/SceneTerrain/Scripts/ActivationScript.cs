@@ -8,6 +8,8 @@ public class ActivationScript : MonoBehaviour
     [SerializeField] private XRSocketInteractor xrSocketInteractor;
     [SerializeField] private GameObject pastilleChangementScene;
     [SerializeField] private GameObject clef;
+       [SerializeField] private ListeObjectifs _listeObjectifs;
+     [SerializeField] private GameObject _crochetAudrey2;
 
     private void Start()
     {
@@ -24,6 +26,7 @@ public class ActivationScript : MonoBehaviour
         if (clef == null)
         {
             Debug.LogError("Veuillez assigner le GameObject de la clé dans l'inspecteur.");
+            
         }
 
         pastilleChangementScene.SetActive(false);
@@ -32,6 +35,7 @@ public class ActivationScript : MonoBehaviour
     private void OnEnable()
     {
         xrSocketInteractor.selectEntered.AddListener(OnSelectEntered);
+        
     }
 
     private void OnDisable()
@@ -41,9 +45,15 @@ public class ActivationScript : MonoBehaviour
 
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
+         
         if (args.interactable.gameObject == clef)
         {
+            
             pastilleChangementScene.SetActive(true);
         }
+    }
+    public void PourListe(){
+        _listeObjectifs.ObjectifAccompli("AudreyCle");
+             _crochetAudrey2.SetActive(true);
     }
 }

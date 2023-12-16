@@ -6,7 +6,9 @@ public class DisappearOnCollision : MonoBehaviour
 {
     [SerializeField] private GameObject crowbarObject;
     [SerializeField] private AudioClip disappearanceSound;
-
+ [SerializeField] private ListeObjectifs _listeObjectifs;
+ [SerializeField] private GameObject _crochetAudrey1;
+   
     private AudioSource audioSource;
 
     private void Start()
@@ -45,6 +47,8 @@ public class DisappearOnCollision : MonoBehaviour
     // Method to destroy the GameObject.
     private void DestroyGameObject()
     {
+        _listeObjectifs.ObjectifAccompli("CrowbarAudrey");
+             _crochetAudrey1.SetActive(true);
         Destroy(gameObject);
     }
 }
