@@ -17,13 +17,18 @@ public class GrabMoney : MonoBehaviour
      private int _lignotsValeur = 1000;
 
     private bool isGrabbed = false;
+[SerializeField] private ListeObjectifs _listeObjectifs;
+        [SerializeField] private GameObject _crochetMeg1;
+     [SerializeField] private GameObject _crochetMeg2;
+         [SerializeField] private GameObject _crochetMeg3;
+     [SerializeField] private GameObject _crochetMeg4;
   void Update()
     {
         AfficherPoints();
     }
     public void AfficherPoints(){
        
-       _texteNbPoints.text = _infosNiveau._nbPoints.ToString();
+       _texteNbPoints.text = _infosNiveau._nbPoints.ToString()+"  $";
          
     }
     private void PrendreMoney(int valeur)
@@ -67,18 +72,26 @@ public class GrabMoney : MonoBehaviour
         if (gameObject.CompareTag("Money"))
         {
             PrendreMoney(_moneyValeur);
+            _listeObjectifs.ObjectifAccompli("RamasserArgent");
+            _crochetMeg1.SetActive(true);
         }
         else if (gameObject.CompareTag("Bijoux"))
         {
             PrendreMoney(_bijouxValeur);
+            _listeObjectifs.ObjectifAccompli("RamasserBijou");
+             _crochetMeg2.SetActive(true);
         }
         else if (gameObject.CompareTag("Valises"))
         {
             PrendreMoney(_valiseValeur);
+            _listeObjectifs.ObjectifAccompli("RamasserValise");
+             _crochetMeg3.SetActive(true);
         }
         else if (gameObject.CompareTag("Lignots"))
         {
             PrendreMoney(_lignotsValeur);
+            _listeObjectifs.ObjectifAccompli("RamasserLingot");
+             _crochetMeg4.SetActive(true);
         }
     }
     //Pour remettre les points à 0 quand la scene reload

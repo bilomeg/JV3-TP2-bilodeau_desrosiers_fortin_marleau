@@ -15,3 +15,9 @@ MonoBehaviour:
   objectifs:
   - _nomObjectif: RamasserBijou
     _estAccompli: 0
+  - _nomObjectif: RamasserArgent
+    _estAccompli: 0
+  - _nomObjectif: RamasserValise
+    _estAccompli: 0
+  - _nomObjectif: RamasserLignot
+    _estAccompli: 0
