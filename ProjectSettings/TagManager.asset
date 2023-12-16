@@ -9,6 +9,9 @@ TagManager:
   - Money
   - MoneyParent
   - Main
+  - Bijoux
+  - Lignots
+  - Valises
   layers:
   - Default
   - TransparentFX

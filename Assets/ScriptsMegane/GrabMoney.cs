@@ -11,10 +11,10 @@ public class GrabMoney : MonoBehaviour
     [SerializeField] private InfosNiveau _infosNiveau;
     [SerializeField] private AudioSource _sonMoney;
 
-    [SerializeField] private int _money = 100;
-    [SerializeField] private int _bijoux = 250;
-    [SerializeField] private int _valise = 500;
-    [SerializeField] private int _lignots = 1000;
+    private int _moneyValeur = 100;
+     private int _bijouxValeur = 250;
+ private int _valiseValeur = 500;
+     private int _lignotsValeur = 1000;
 
     private bool isGrabbed = false;
   void Update()
@@ -26,12 +26,14 @@ public class GrabMoney : MonoBehaviour
        _texteNbPoints.text = _infosNiveau._nbPoints.ToString();
          
     }
-    private void PrendreMoney()
+    private void PrendreMoney(int valeur)
     {
         if (isGrabbed)
         {
             _sonMoney.Play();
             gameObject.SetActive(false);
+            _infosNiveau._nbPoints += valeur;
+            AfficherPoints();
         }
     }
 
@@ -62,7 +64,22 @@ public class GrabMoney : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         // Appeler PrendreMoney après le délai
-        PrendreMoney();
+        if (gameObject.CompareTag("Money"))
+        {
+            PrendreMoney(_moneyValeur);
+        }
+        else if (gameObject.CompareTag("Bijoux"))
+        {
+            PrendreMoney(_bijouxValeur);
+        }
+        else if (gameObject.CompareTag("Valises"))
+        {
+            PrendreMoney(_valiseValeur);
+        }
+        else if (gameObject.CompareTag("Lignots"))
+        {
+            PrendreMoney(_lignotsValeur);
+        }
     }
     //Pour remettre les points à 0 quand la scene reload
 
