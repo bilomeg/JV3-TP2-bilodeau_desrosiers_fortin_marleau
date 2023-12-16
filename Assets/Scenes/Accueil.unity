@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 179563552}
   - component: {fileID: 179563554}
   - component: {fileID: 179563553}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: "con\xE7u par"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,7 +945,7 @@ GameObject:
   - component: {fileID: 448434023}
   - component: {fileID: 448434025}
   - component: {fileID: 448434024}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: thomas desrosiers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2662,7 +2662,7 @@ GameObject:
   - component: {fileID: 750267476}
   - component: {fileID: 750267478}
   - component: {fileID: 750267477}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: audrey marleau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3696,6 +3696,7 @@ GameObject:
   - component: {fileID: 971280283}
   - component: {fileID: 971280282}
   - component: {fileID: 971280281}
+  - component: {fileID: 971280286}
   m_Layer: 5
   m_Name: Interface quit
   m_TagString: Untagged
@@ -3820,6 +3821,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &971280286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971280279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bafd4c04503954793ef4bdd5ab8957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quitterGame: {fileID: 684385141}
 --- !u!1 &997132611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,7 +4112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1056164438}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Noms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4617,7 +4631,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 0
@@ -6614,6 +6628,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1858571489}
     m_Modifications:
+    - target: {fileID: 65978242923552638, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 238456331563860773, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 398421035934266746, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 759322141858150176, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1231060649061172903, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -6624,10 +6658,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1435052178965758642, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1549126065866791881, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304826000145093273, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3017581810043485293, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
@@ -6644,10 +6688,30 @@ PrefabInstance:
       propertyPath: m_text
       value: Effets
       objectReference: {fileID: 0}
+    - target: {fileID: 3152557745367324781, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3573243110415472781, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
       propertyPath: m_text
       value: Musique
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358989209894975996, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387474222228212366, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586294099422899029, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4670905388758022870, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
@@ -6664,6 +6728,11 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4699596711979963219, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4765543707873115291, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
       propertyPath: m_Name
@@ -6671,8 +6740,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765543707873115291, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765543707873115291, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856439774172970034, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4856439774172970034, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
@@ -6683,6 +6762,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296284796380499638, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768282983402238733, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5825106712102830207, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
@@ -6788,6 +6877,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -14.479705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719331902853641685, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774908153363501557, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900257780323506848, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8410249409897672395, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
@@ -6964,6 +7068,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9187267738514184879, guid: 8cc7df1258db87f4b935115b5a1f7906,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9210128701766011603, guid: 8cc7df1258db87f4b935115b5a1f7906,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -7052,7 +7161,7 @@ MonoBehaviour:
   m_System: {fileID: 0}
   m_TurnSpeed: 60
   m_LeftHandTurnAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Left Hand Turn
       m_Type: 0
@@ -7062,10 +7171,10 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RightHandTurnAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Right Hand Turn
       m_Type: 0
@@ -7075,7 +7184,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &1668091974
 GameObject:
   m_ObjectHideFlags: 0
@@ -7205,7 +7315,7 @@ GameObject:
   - component: {fileID: 1697266656}
   - component: {fileID: 1697266658}
   - component: {fileID: 1697266657}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: emmy fortin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7447,7 +7557,7 @@ GameObject:
   - component: {fileID: 1736740361}
   - component: {fileID: 1736740363}
   - component: {fileID: 1736740362}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: "m\xE9gane bilodeau"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8290,7 +8400,7 @@ GameObject:
   - component: {fileID: 1887220566}
   - component: {fileID: 1887220565}
   - component: {fileID: 1887220564}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Interface noms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
