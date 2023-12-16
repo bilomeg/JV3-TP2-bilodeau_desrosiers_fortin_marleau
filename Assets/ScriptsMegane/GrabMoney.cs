@@ -1,13 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 public class GrabMoney : MonoBehaviour
 {
 
+    [SerializeField] private TMP_Text _texteNbPoints;
+    [SerializeField] private InfosNiveau _infosNiveau;
     [SerializeField] private AudioSource _sonMoney;
-    private bool isGrabbed = false;
 
+    [SerializeField] private int _money = 100;
+    [SerializeField] private int _bijoux = 250;
+    [SerializeField] private int _valise = 500;
+    [SerializeField] private int _lignots = 1000;
+
+    private bool isGrabbed = false;
+  void Update()
+    {
+        AfficherPoints();
+    }
+    public void AfficherPoints(){
+       
+       _texteNbPoints.text = _infosNiveau._nbPoints.ToString();
+         
+    }
     private void PrendreMoney()
     {
         if (isGrabbed)
@@ -46,6 +64,23 @@ public class GrabMoney : MonoBehaviour
         // Appeler PrendreMoney après le délai
         PrendreMoney();
     }
+    //Pour remettre les points à 0 quand la scene reload
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Réinitialiser les points à zéro
+        _infosNiveau._nbPoints = 0;
+    } 
 
 }
 
