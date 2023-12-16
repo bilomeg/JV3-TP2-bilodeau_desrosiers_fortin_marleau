@@ -10,12 +10,12 @@ public class Timer : MonoBehaviour
     //Référence au texte du timer
     [SerializeField] private TMP_Text _tempsTexte;
     //Variable qui affichera le temps 
-  
+  private bool _tempsJeuFini = false;
 
     // Référence aux scriptables objects
     [SerializeField] private InfosNiveau _infosDuNiveau;
   
-  
+  [SerializeField]private ZoneSceneFin _zoneFinScene;
    
 
 
@@ -44,7 +44,14 @@ public class Timer : MonoBehaviour
     if(_tempsTexte != null){
         AfficherTemps(_infosDuNiveau._tempsEcoule);
     }
-    
+     if (_infosDuNiveau._tempsEcoule<= 0f){
+        Debug.Log($"h");
+        _tempsJeuFini = true;
+        _infosDuNiveau._tempsEcoule =0f;
+         _zoneFinScene.AllerSceneCredits();
+
+       
+    }
  
 
 
