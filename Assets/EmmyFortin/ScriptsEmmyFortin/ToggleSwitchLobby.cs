@@ -14,7 +14,7 @@ public class ToggleSwitchLobby : MonoBehaviour
   private GameObject _lumiereDuLobby;
 
   private bool _toggleSwitch;
-//[SerializeField] private AudioSource _sonInterupteur;
+
   public void LumiereOnOff()
   {
     
@@ -25,7 +25,7 @@ public class ToggleSwitchLobby : MonoBehaviour
       _switchOff.SetActive(false);
       _toggleSwitch = true;
       _lumiereDuLobby.SetActive(true);
-      //_sonInterupteur.Play();
+
   
     }
     else
@@ -35,7 +35,7 @@ public class ToggleSwitchLobby : MonoBehaviour
       _switchOff.SetActive(true);
       _toggleSwitch = false;
       _lumiereDuLobby.SetActive(false);
-      //_sonInterupteur.Play();
+
 
     }
   }

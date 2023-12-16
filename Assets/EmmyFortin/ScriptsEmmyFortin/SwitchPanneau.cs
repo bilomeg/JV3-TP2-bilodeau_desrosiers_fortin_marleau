@@ -37,6 +37,10 @@ public bool _courantOn;
    [SerializeField] private ListeObjectifs _listeObjectifs;
      [SerializeField] private GameObject _crochetEmmy1;
      [SerializeField] private GameObject _crochetEmmy2;
+  [SerializeField] private AudioSource _sonInterrupteurOn;
+  [SerializeField] private AudioSource _sonInterrupteurOff;
+  [SerializeField] private AudioSource _sonBreaker;
+     
   public void Switch1OnOff()
   {
     
@@ -46,6 +50,7 @@ public bool _courantOn;
       _switch1On.SetActive(true);
       _switch1Off.SetActive(false);
       _toggleSwitch1 = true;
+      _sonBreaker.Play();
 
 CourantCheck();
   
@@ -57,7 +62,7 @@ CourantCheck();
       _switch1Off.SetActive(true);
       _toggleSwitch1 = false;
 
-  
+      _sonBreaker.Play();
 
     }
     }
@@ -67,6 +72,7 @@ CourantCheck();
       _switch2On.SetActive(true);
       _switch2Off.SetActive(false);
       _toggleSwitch2 = true;
+      _sonBreaker.Play();
       CourantCheck();
     }
       else
@@ -75,6 +81,7 @@ CourantCheck();
       _switch2On.SetActive(false);
       _switch2Off.SetActive(true);
       _toggleSwitch2 = false;
+      _sonBreaker.Play();
 
   
 
@@ -108,14 +115,14 @@ CourantCheck();
      _listeObjectifs.ObjectifAccompli("Lumiere");
              _crochetEmmy2.SetActive(true);
        
-      //_sonInterupteur.Play();
+      _sonInterrupteurOn.Play();
     }
     else{
               _switchOn.SetActive(false);
       _switchOff.SetActive(true);
       _toggleSwitch = false;
       _lumiereDuLobby.SetActive(false);
-      //_sonInterupteur.Play();
+      _sonInterrupteurOff.Play();
     }
    } 
   
