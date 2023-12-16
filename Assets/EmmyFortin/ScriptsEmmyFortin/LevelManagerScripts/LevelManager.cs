@@ -56,7 +56,10 @@ public class LevelManager : MonoBehaviour
           
         do {
             await Task.Delay(800);
-          _barreProgression.fillAmount = sceneLoad.progress;  
+            if(_barreProgression != null){
+                _barreProgression.fillAmount = sceneLoad.progress;  
+            }
+          
         } while (sceneLoad.progress < 0.9f);
 
         sceneLoad.allowSceneActivation = true;
