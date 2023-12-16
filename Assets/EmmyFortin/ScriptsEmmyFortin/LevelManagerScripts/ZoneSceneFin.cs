@@ -14,8 +14,12 @@ public class ZoneSceneFin : MonoBehaviour
     }
 
 
- private void OnTriggerEnter(Collider other)
+public void AllerSceneCredits(){
+    _levelManager.LoadAsyncScene(LevelManager.Scene.Credits);
+    
+}
+ /*private void OnTriggerEnter(Collider other)
  {
     _levelManager.LoadAsyncScene(LevelManager.Scene.Credits);
- }
+ }*/
 }

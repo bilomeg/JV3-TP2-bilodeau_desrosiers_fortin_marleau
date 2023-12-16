@@ -10,7 +10,7 @@ public class InfosNiveau : ScriptableObject
     [SerializeField] public float _tempsDeJeu;
     [SerializeField] public float _tempsEcoule;
     [SerializeField] public bool firstTime;
-    
+    [SerializeField] public float _nbPoints;
     public void init()
     {   Debug.Log("allo: "+firstTime);
        // if(firstTime == false)
