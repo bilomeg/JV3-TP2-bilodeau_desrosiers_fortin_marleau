@@ -4,40 +4,48 @@ using UnityEngine;
 
 public class GrabMoney : MonoBehaviour
 {
-    [SerializeField]private AudioSource _sonMoney;
-    
 
-    /*private void OnTriggerEnter(Collider other)
+    [SerializeField] private AudioSource _sonMoney;
+    private bool isGrabbed = false;
+
+    private void PrendreMoney()
     {
-        if (other.gameObject.CompareTag("Money"))
+        if (isGrabbed)
         {
-            PrendreMoney(other.gameObject);
+            _sonMoney.Play();
+            gameObject.SetActive(false);
         }
     }
-    public void PrendreMoney(GameObject moneyObject)
+
+    private void OnTriggerEnter(Collider other)
     {
-        _sonMoney.Play();
+        if (other.gameObject.CompareTag("Main"))
+        {
+            // Marquer comme grabbé
+            isGrabbed = true;
 
-        // Vous pouvez choisir entre Destroy et SetActive en fonction de vos besoins.
+            // Démarrer une coroutine pour attendre un certain délai (par exemple, 0.5 secondes)
+            StartCoroutine(WaitForGrab());
+        }
+    }
 
-        // Option 1: Détruire l'objet
-        Destroy(moneyObject);
-
-        // Option 2: Désactiver l'objet (commentez la ligne ci-dessus si vous utilisez celle-ci)
-        // moneyObject.SetActive(false);
-
-        Debug.Log("Objet Money pris !");
-    }*/
-
-    /*gameObject.tag = "Money";
-    public void PrendreMoney()
+    private void OnTriggerExit(Collider other)
     {
-        _sonMoney.Play();
+        if (other.gameObject.CompareTag("Main"))
+        {
+            // Réinitialiser l'état grabbé lorsque la main quitte la zone
+            isGrabbed = false;
+        }
+    }
 
-        Destroy(gameObject.tag.CompareTag("Money"));
-        //gameObject.SetActive(false);
-        Debug.Log("oui");
+    private System.Collections.IEnumerator WaitForGrab()
+    {
+        // Attendre un court délai (0.5 secondes par exemple)
+        yield return new WaitForSeconds(0.5f);
 
-    }*/
+        // Appeler PrendreMoney après le délai
+        PrendreMoney();
+    }
+
 }
 
