@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Hammer
   - Tool
+  - Money
+  - MoneyParent
+  - Main
   layers:
   - Default
   - TransparentFX
