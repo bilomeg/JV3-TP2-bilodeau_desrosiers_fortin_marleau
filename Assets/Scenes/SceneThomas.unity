@@ -20203,7 +20203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2241413723145942083 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5609204301607606180, guid: b06c2feb0b475dd4090a54ade2e78e7c,
