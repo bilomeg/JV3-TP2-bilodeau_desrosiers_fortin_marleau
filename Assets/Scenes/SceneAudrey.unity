@@ -4070,6 +4070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tempsTexte: {fileID: 5064783321718945029}
   _infosDuNiveau: {fileID: 11400000, guid: 6bd472c405810714380d926d1eedc279, type: 2}
+  _zoneFinScene: {fileID: 0}
 --- !u!1 &618581080
 GameObject:
   m_ObjectHideFlags: 0
@@ -15176,7 +15177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Trouver la crowbar et enlver les planches
+  m_text: Trouver le pied-de-biche et enlver les planches
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 776fd9ca370cdbd4781c8bcdb81c7c44, type: 2}
   m_sharedMaterial: {fileID: 7294028337403846973, guid: 776fd9ca370cdbd4781c8bcdb81c7c44,

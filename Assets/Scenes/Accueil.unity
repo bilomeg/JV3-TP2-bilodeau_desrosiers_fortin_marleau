@@ -3271,7 +3271,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Vous voici coinc\xE9 dans un h\xF4tel d\xE9sert renfermant des \nrichesses
-    pr\xE9cieuses. \n\nSaisisez-les ou \xE9chappez-vous avant\nqu'il ne soit trop
+    pr\xE9cieuses. \n\nSaisissez-les ou \xE9chappez-vous avant\nqu'il ne soit trop
     tard !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31b05251087c1ba4bae06b5bfd44f2a8, type: 2}
