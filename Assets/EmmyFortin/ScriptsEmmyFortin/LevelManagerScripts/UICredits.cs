@@ -17,7 +17,7 @@ public class UICredits : MonoBehaviour
     {
         _levelManager = LevelManager.Instance;
         _accueil.onClick.AddListener(AllerAccueil);
-        _texteNbPoints.text = _infosNiveau._nbPoints.ToString();
+        _texteNbPoints.text = _infosNiveau._nbPoints.ToString() + " $";
       
     }
  private void AllerAccueil()
