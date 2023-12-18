@@ -50,13 +50,16 @@ public class LevelManager : MonoBehaviour
     public async void LoadAsyncScene(Scene sceneName)
     {
         var sceneLoad = SceneManager.LoadSceneAsync(sceneName.ToString());
-        sceneLoad.allowSceneActivation = false;
+       // sceneLoad.allowSceneActivation = false;
 
         _loaderCanvas.SetActive(true);
           
         do {
             await Task.Delay(800);
-          _barreProgression.fillAmount = sceneLoad.progress;  
+            if(_barreProgression != null){
+                _barreProgression.fillAmount = sceneLoad.progress;  
+            }
+          
         } while (sceneLoad.progress < 0.9f);
 
         sceneLoad.allowSceneActivation = true;
