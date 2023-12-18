@@ -32,6 +32,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Offset: 1
+    - _QueueControl: 0
     m_Colors:
     - _Emission: {r: 1.0290111, g: 7.3772106, b: 0, a: 0}
   m_BuildTextureStacks: []
